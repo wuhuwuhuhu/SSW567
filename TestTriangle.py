@@ -15,7 +15,7 @@ from Triangle import classifyTriangle
 # https://docs.python.org/3/library/unittest.html has a nice description of the framework
 
 class TestTriangles(unittest.TestCase):
-    define multiple sets of tests as functions with names that begin
+    #define multiple sets of tests as functions with names that begin
 
     def testRightTriangleA(self): 
         self.assertEqual(classifyTriangle(3,4,5),'Right','3,4,5 is a Right triangle')
@@ -36,7 +36,7 @@ class TestTriangles(unittest.TestCase):
         self.assertEqual(classifyTriangle(1,4,5),'NotATriangle','1,4,5 is not a triangle')
 
     def testScaleneTrianglesB(self):
-        self.assertEqual(classifyTriangle(3,4,5.5),'Scalene','3,4,5.5 is a scalene triangle')
+        self.assertEqual(classifyTriangle(3,4,6),'Scalene','3,4,6 is a scalene triangle')
 
     def testInvalidInputA(self):
         self.assertEqual(classifyTriangle(200,300,400),'InvalidInput','200,300,400 are invalid input')
